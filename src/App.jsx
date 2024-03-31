@@ -1,13 +1,17 @@
-
+import Navbars from "./components/Navbars.jsx";
+import Footers from "./components/Footers.jsx";
+import Events from "./pages/Events.jsx";
+import Team from "./pages/Team.jsx";
+import Dotslash from "./pages/Dotslash.jsx";
+import Contact from "./pages/Contact.jsx";
 import './App.css'
-
 function App() {
   
   return (
     <>
-      <div className="flex flex-col  w-full">
-        Hi
-      </div>
+      <Navbars />
+      <div className="home"></div>
+      {/* <Footers /> */}
     </>
   )
 }
