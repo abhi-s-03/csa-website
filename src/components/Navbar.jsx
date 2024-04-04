@@ -5,13 +5,13 @@ function Navbars() {
     <>
       <div className="navbar">
         <div className="nav-items">
-          <a href="#">Achievements</a>
-          <a href="#">Newsletter</a>
+          <a href="/achievements">Achievements</a>
+          <a href="/newsletter">Newsletter</a>
           <a href="#">
             <img src={logo} alt="Logo" />
           </a>
-          <a href="#">Dotslash</a>
-          <a href="#">CS Cup</a>
+          <a href="/dotslash">Dotslash</a>
+          <a href="/cscup">CS Cup</a>
         </div>
       </div>
     </>
