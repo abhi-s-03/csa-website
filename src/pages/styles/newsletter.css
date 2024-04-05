@@ -1,0 +1,26 @@
+.newsletter {
+  height: 100vh;
+  background-image: url(../../assets/bg1.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.newsletter .nav-items a {
+    color: black;
+}
+
+.newsletter .nav-items a:hover {
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.newsletter-box{
+    padding: 10rem 5rem 0rem 5rem;
+}
+
+.newsletter-desc{
+    border: 1px solid black;
+    height: calc(100vh - 13rem);
+    border-radius: 10px;
+    padding: 1rem;
+}
