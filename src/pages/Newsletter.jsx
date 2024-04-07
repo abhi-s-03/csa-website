@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
@@ -17,8 +18,8 @@ export default function Newsletter() {
 
   return (
     <>
+    <Navbar />
       <div className="newsletter">
-        <Navbar />
         <div className="newsletter-box">
           <div className="newsletter-pdf">
             <Viewer
@@ -29,6 +30,7 @@ export default function Newsletter() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
