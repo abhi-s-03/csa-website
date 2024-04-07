@@ -1,11 +1,11 @@
 .navbar {
-  background-color: transparent;
+  background-color: black;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position:fixed;
   z-index: 2;
 }
 
