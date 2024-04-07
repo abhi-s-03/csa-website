@@ -17,16 +17,16 @@ function Footer() {
             <BsInstagram size={24} />
           </a>
           <a href="mailto:csa@cet.ac.in" className="footer-social-link">
-            <MdEmail size={24} />
+            <MdEmail size={20} />
           </a>
           <a
             href="https://www.linkedin.com/company/cs-association-cet/"
             className="footer-social-link"
           >
-            <BsLinkedin size={24} />
+            <BsLinkedin size={20} />
           </a>
           <a href="https://github.com/csacet" className="footer-social-link">
-            <BsGithub size={24} />
+            <BsGithub size={20} />
           </a>
         </div>
       </div>

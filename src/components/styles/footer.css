@@ -60,5 +60,15 @@ footer {
 .copyright p{
   font-size: 0.8rem;
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-text{
+    font-size: 0.8rem;
+  }
+
+  footer{
+    padding: 1rem ;
+  }
 }

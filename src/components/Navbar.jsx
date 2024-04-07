@@ -10,17 +10,17 @@ function Navbars() {
           <NavLink to="/achievements" activeClassName="active">
             Achievements
           </NavLink>
-          <NavLink to="/newsletter" activeClassName="active">
-            Newsletter
+          <NavLink to="/dotslash" activeClassName="active">
+            Dotslash
           </NavLink>
           <NavLink to="/" activeClassName="active">
             <img src={logo} alt="Logo" />
           </NavLink>
-          <NavLink to="/dotslash" activeClassName="active">
-            Dotslash
-          </NavLink>
           <NavLink to="/cscup" activeClassName="active">
             CS Cup
+          </NavLink>
+          <NavLink to="/newsletter" activeClassName="active">
+            Newsletter
           </NavLink>
         </div>
       </div>
