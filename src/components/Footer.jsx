@@ -32,7 +32,7 @@ function Footer() {
       </div>
       <div className="line"></div>
       <div className="copyright">
-        <p>@2024 CSA</p>
+        <p>@ 2024 CSA</p>
       </div>
     </footer>
   );
