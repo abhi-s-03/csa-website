@@ -1,13 +1,16 @@
+import { Footer, FooterIcon } from "flowbite-react";
 import {
-    Footer,
-    FooterIcon,
-  } from 'flowbite-react';
-  import { BsGithub, BsInstagram, BsTwitter, BsMailbox2, BsLinkedin } from 'react-icons/bs';
-  import logo from '../assets/logo.png';
-  
-  function Footers() {
-    return (
-      <Footer container>
+  BsGithub,
+  BsInstagram,
+  BsTwitter,
+  BsMailbox2,
+  BsLinkedin,
+} from "react-icons/bs";
+import logo from "../assets/logo.png";
+function Footers() {
+  return (
+    <>
+      {/* <Footer container style={{ borderRadius: 0 }}>
         <div className="w-full">
           
           <div className="w-full m-0 sm:flex sm:items-center sm:justify-between">
@@ -27,8 +30,18 @@ import {
             </div>
           </div>
         </div>
-      </Footer>
-    );
-  }
+      </Footer> */}
+      <div className="footer">
+        <div>
+          <p className="text-sm text-center sm:text-left">
+            <img src={logo} alt="CSA Logo" className="h-8 w-8 inline" />
+            &nbsp; College of Engineering Trivandrum
+          </p>
+        </div>
+        
+      </div>
+    </>
+  );
+}
 
-    export default Footers;
+export default Footers;
