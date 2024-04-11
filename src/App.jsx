@@ -4,6 +4,7 @@ import Landing from "./pages/Landing.jsx";
 import Newsletter from "./pages/Newsletter.jsx";
 import Dotslash from "./pages/Dotslash.jsx";
 import CSCup from "./pages/Cscup.jsx";
+import Achievements from "./pages/Achievements.jsx";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/newsletter" element={<Newsletter />} />
           <Route path="/dotslash" element={<Dotslash />} />
           <Route path="/cscup" element={<CSCup />} />
+          <Route path="/achievements" element={<Achievements />} />
         </Routes>
       </Router>
     </>

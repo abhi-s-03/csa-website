@@ -1,0 +1,8 @@
+.dotslash-full{
+    width:100vw;
+    background-image: url(../../assets/images/Dotslashback.png);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
