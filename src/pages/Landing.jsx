@@ -1,6 +1,6 @@
 import "./styles/landing.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Footer from "../components/Footers";
 export default function Landing() {
   return (
     <>

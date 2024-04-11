@@ -1,0 +1,25 @@
+
+
+.achievements .nav-items a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.achievements {
+    width:100vw;
+    font-family: 'Poppins', sans-serif; 
+    background-image: url(../../assets/bg1.png);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+.max-width{
+    max-width: 400px;
+}
+
+.achievements .flex.flex-row.justify-center button {
+    margin-right: 20px; /* Adjust this value to your preference */
+    padding: 10px 20px; /* Adjust this value to your preference */
+  }
