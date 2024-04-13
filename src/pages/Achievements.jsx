@@ -159,7 +159,7 @@ function Events() {
 
   return (
     <div className='achievements'>
-      <Navbar />
+      <Navbar textColor="black" />
       <div className='p-10 pt-44 items-center flex flex-col'>
         <div className="text-7xl text-center mb-4 font-bold">Achievements</div>
         <div className='items-center m-4 flex flex-row justify-center'>

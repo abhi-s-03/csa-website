@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 export default function Landing() {
   return (
     <>
-      <Navbar />
+      <Navbar textColor="white" />
       <div className="home">
         <div className="cse">
           <div className="clg">Computer Science and Engineering</div>

@@ -18,7 +18,7 @@ export default function Newsletter() {
 
   return (
     <>
-    <Navbar />
+    <Navbar textColor="black" />
       <div className="newsletter">
         <div className="newsletter-box">
           <div className="newsletter-pdf">
