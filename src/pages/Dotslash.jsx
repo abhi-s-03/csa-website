@@ -24,16 +24,13 @@ function Gallery() {
   return (
     <div className='dotslash-full'>
       <Navbar />
-      <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen' style={{
-        background: ``,
-        
-      }}>
+      <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen' style={{}}>
         <div className='flex flex-row justify-center text-[#ffffff] font-bold'>
-        <img src={dotslashTitle} alt="DotSlash Title" className="mx-auto mt-6 w- h-16" />
+          <img src={dotslashTitle} alt="DotSlash Title" className="mx-auto mt-6 w- h-16" />
         </div>
         <div className='text-[41px] font-semibold text-center mt-6 text-[#ffffff]'>Gallery</div>
-        <div className='flex flex-row justify-center'>
-          <button onClick={handlePrev} ><IoIosArrowRoundBack className='m-0 text-5xl text-white' /></button>
+        <div className='flex flex-row justify-center mt-10'>
+          <button onClick={handlePrev}><IoIosArrowRoundBack className='m-0 text-5xl text-white' /></button>
           {images.map((image, index) => (
             <img
               key={index}
@@ -42,8 +39,6 @@ function Gallery() {
               style={{
                 height: '400px',
                 width: selectedImage === index ? '400px' : '100px',
-                backgroundPosition: selectedImage === index ? 'center' : 'left',
-                backgroundSize: selectedImage === index ? 'cover' : 'auto',
                 border: selectedImage === index ? '1px solid white' : '1px solid white',
                 margin: '0 5px',
                 cursor: 'pointer',
