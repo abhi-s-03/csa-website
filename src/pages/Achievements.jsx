@@ -7,6 +7,7 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import Event1 from '../assets/images/achievements.jpg';
 import Event2 from '../assets/images/achievements.jpg';
 import Navbar from '../components/Navbar';
+import background from '../assets/images/bg1.png';
 
 const studentEvents = [
   {
@@ -127,7 +128,7 @@ function Events() {
   };
 
   return (
-    <div className='achievements min-h-screen bg-gradient-to-b from-gray-100 to-gray-300 bg-repeat'>
+    <div className='achievements min-h-screen bg-pattern bg-repeat '>
       <Navbar textColor="black" />
       <div className='p-10 pt-44 items-center flex flex-col'>
         <div className="text-4xl sm:text-5xl lg:text-6xl text-center mb-4 font-bold">Achievements</div>

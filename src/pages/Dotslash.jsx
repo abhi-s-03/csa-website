@@ -3,12 +3,21 @@ import Navbar from "../components/Navbar";
 import image1 from '../assets/images/apples.jpg';
 import { MdArrowRight, MdArrowLeft } from "react-icons/md";
 import dotslashTitle from '../assets/images/dotslashTitle.svg';
+import img1 from "../assets/images/dotslash/1.png";
+import img2 from "../assets/images/dotslash/2.png";
+import img3 from "../assets/images/dotslash/3.png";
+import img4 from "../assets/images/dotslash/4.png";
+import img5 from "../assets/images/dotslash/5.png";
+import img6 from "../assets/images/dotslash/6.png";
+import img7 from "../assets/images/dotslash/7.png";
+import img8 from "../assets/images/dotslash/8.png";
+import img9 from "../assets/images/dotslash/9.png";
 import './styles/dotslash.css';
 import Footer from '../components/Footer';
 
 function Gallery() {
   const [selectedImage, setSelectedImage] = useState(0);
-  const images = [image1, image1, image1, image1, image1, image1, image1];
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
   const intervalDuration = 3000; // Change this value to adjust the interval duration
 
   useEffect(() => {
@@ -34,26 +43,52 @@ function Gallery() {
   return (
     <div className='dotslash-full max-w-full overflow-hidden'>
       <Navbar textColor="white" />
-      <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen'>
-        <div className='flex flex-row justify-center text-white font-bold'>
+      <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen' style={{ background: '' }}>
+        <div className='flex flex-row justify-center text-[#ffffff] font-bold'>
           <img src={dotslashTitle} alt="DotSlash Title" className="mx-auto mt-6 w- h-16" />
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center md:justify-start">
-          <div className="md:mr-4 p-16 md:p-0 mx-16 md:w-1/2 ">
+        
+        <p className="text-white p-20 text-lg w-full flex justify-center items-center text-center">
+
+          
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
+        </p>
+        <div className="flex flex-col-reverse xl:flex-row items-center justify-center xl:justify-start">
+          
+          <div className="md:w-3/4">
+            {/* Paragraph */}
+            <p className="text-white p-10 xl:p-20 text-lg flex justify-center items-center text-center md:justify-start">
+             
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
+
+            </p>
+          </div>
+          <div className="md:m-10 p-16 md:p-0 mx-16 md:w-1/2 px-5">
             {/* Image */}
-            <img src={images[selectedImage]} alt="Image" className="w-full md:w-auto" />
+            <img src={img1} alt="Image" className="w-full md:w-auto" />
+          </div>
+        </div>
+        <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-start">
+          <div className="md:m-4 p-16 md:p-0 mx-16 md:w-1/2 px-5">
+            {/* Image */}
+            <img src={img9} alt="Image" className="w-full md:w-auto" />
           </div>
           <div className="md:w-3/4">
             {/* Paragraph */}
-            <p className="text-white p-20 text-lg flex justify-center items-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et unde vero, nobis sed voluptatem repellat cum aut molestiae ad beatae officia nemo harum ratione, veritatis molestias a illo pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corrupti minus sint, cum dicta esse qui ex, perspiciatis soluta debitis repellendus expedita neque ullam nesciunt enim ut similique corporis assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dicta et facilis qui. Asperiores praesentium numquam sunt rerum atque quos doloribus omnis laboriosam possimus sint facere, animi explicabo modi enim? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam beatae ipsam consequatur voluptatem in molestiae culpa rem ab molestias, necessitatibus similique, illo eaque aut nisi nesciunt. Quo itaque est numquam?
+            <p className="text-white p-10 xl:p-20 text-lg flex justify-center items-center text-center md:justify-end">
+              
+
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
             </p>
           </div>
         </div>
-        <div className='text-[41px] font-semibold text-center mt-6 text-white'>Gallery</div>
-        <div className='flex flex-row justify-center mt-10 max-w-full'>
+        <div className='text-[41px] font-semibold text-center mt-6 text-[#ffffff]'>Gallery</div>
+        <div className='flex flex-row justify-center mt-10'>
           <button onClick={handlePrev} className='mx-24 rounded-full max-w-6 self-center'>
-            <MdArrowLeft className='text-2xl text-white bg-black rounded-full' />
+            <MdArrowLeft className='text-2xl text-[#1D2C66] bg-white rounded-full' />
           </button>
           {images.map((image, index) => (
             <img
@@ -67,7 +102,7 @@ function Gallery() {
                 margin: '0 5px',
                 cursor: 'pointer',
                 transition: 'width 0.5s',
-                objectFit: selectedImage === index ? '' : 'cover',
+                objectFit:  selectedImage === index ? '' : 'cover',
                 objectPosition: selectedImage === index ? '' : '25% 25%',
               }}
               className='rounded-md'
@@ -75,11 +110,11 @@ function Gallery() {
             />
           ))}
           <button onClick={handleNext} className='mx-24 rounded-full max-w-6 self-center'>
-            <MdArrowRight className='text-2xl text-white bg-black rounded-full' />
+            <MdArrowRight className='text-2xl text-[#1D2C66] bg-white rounded-full' />
           </button>
         </div>
         <div className='mt-10 text-center'>
-          <p className='text-white text-xl'>Visit <a href='https://dotslashcet.tech' className='underline italic'>Dotslash</a> for more</p>
+          <p className='text-white text-xl'>Visit <a href='https://www.dotslashcet.tech/' className='underline italic'>Dotslash</a> for more</p>
         </div>
       </div>
       <Footer />
