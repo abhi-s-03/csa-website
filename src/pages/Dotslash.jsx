@@ -6,6 +6,7 @@ import { MdArrowRight,MdArrowLeft } from "react-icons/md";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import dotslashTitle from '../assets/images/dotslashTitle.svg';
 import './styles/dotslash.css'
+import Footer  from '../components/Footer';
 
 function Gallery() {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -65,6 +66,8 @@ function Gallery() {
           <p className='text-white text-xl'>Visit <a href='https://dotslashcet.tech' className='underline italic'>Dotslash</a> for more</p>
         </div>
       </div>
+    <Footer />
+
     </div>
   );
 }
