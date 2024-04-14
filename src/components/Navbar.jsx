@@ -51,7 +51,7 @@ function Navbar({ textColor }) {
             <div className="mx-10 flex md:hidden">
               <button
                 onClick={toggleMobileMenu}
-                className={`text-white hover:text-gray-500 focus:outline-none`}
+                className={`text-${textColor} hover:text-gray-500 focus:outline-none`}
               >
                 <svg
                   className="h-6 w-6 fill-current"
