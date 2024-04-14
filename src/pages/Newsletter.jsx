@@ -5,7 +5,7 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import { useState } from "react";
-import newsletter from "../assets/newsletter2.pdf";
+import newsletter from "../assets/newsletters/newsletter2.pdf";
 export default function Newsletter() {
   const defaultLayoutPluginInstance = defaultLayoutPlugin({
     setInitialTab: (doc) => Promise.resolve(0),
