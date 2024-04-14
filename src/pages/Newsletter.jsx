@@ -18,9 +18,9 @@ export default function Newsletter() {
 
   return (
     <>
-    <Navbar />
+    <Navbar textColor='black'/>
       <div className="newsletter">
-        <div className="newsletter-box">
+        <div className="newsletter-box mt-16">
           <div className="newsletter-pdf">
             <Viewer
               fileUrl={newsletter}
