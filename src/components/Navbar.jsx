@@ -97,6 +97,14 @@ function Navbar({ textColor }) {
                 Newsletter
               </NavLink>
               <NavLink
+                className={`block ${textColor ? `text-${textColor}` : 'text-white'} hover:bg-gray-500 justify-center align-center hover:bg-opacity-10 px-5 py-5 rounded-md text-xl`}
+                to="/"
+                activeClassName="active"
+                onClick={toggleMobileMenu}
+              >
+                Home
+              </NavLink>
+              <NavLink
                 className={`block ${textColor ? `text-${textColor}` : 'text-white'} hover:bg-gray-500 justify-center align-middle hover:bg-opacity-10 px-5 py-5 rounded-md text-xl`}
                 to="/dotslash"
                 activeClassName="active"

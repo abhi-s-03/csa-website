@@ -6,6 +6,7 @@ import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import { MdArrowRight,MdArrowLeft } from "react-icons/md";
 import cstitle from '../assets/images/image 39.svg';
 import './styles/cscup.css'
+import Footer  from '../components/Footer';
 
 function CsCup() {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -62,9 +63,10 @@ function CsCup() {
           </button>
         </div>
         <div className='mt-10 text-center'>
-          <p className='text-white text-xl'>Visit <a href='https://dotslashcet.tech' className='underline italic'>CS-Cup</a> for more</p>
+          <p className='text-white text-xl'>Visit <a href='https://cs-cup-points-table.vercel.app/' className='underline italic'>CS-Cup</a> for more</p>
         </div>
       </div>
+    <Footer />
     </div>
   );
 }
