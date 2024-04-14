@@ -82,7 +82,7 @@ function Events() {
         loop: true,
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 3, // Display three items at a time
+        slidesPerView: 1, // Display three items at a time
         spaceBetween: 30,
         coverflowEffect: {
           rotate: 50,
@@ -103,6 +103,17 @@ function Events() {
           enabled: true,
           onlyInViewport: false,
         },
+        breakpoints: {
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 992px
+          992: {
+            slidesPerView: 3,
+          },
+        }
+
       });
     }
   }, []);
