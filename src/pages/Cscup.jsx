@@ -25,7 +25,7 @@ function CsCup() {
 
   return (
     <div className='cs-full'>
-      <Navbar />
+    <Navbar textColor="white" />
       <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen' style={{
         background: ``,
         

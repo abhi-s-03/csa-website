@@ -6,10 +6,10 @@ import Footer from "../components/Footer";
 export default function Landing() {
   return (
     <>
-      <Navbar />
+      <Navbar textColor="white" />
       <div className="home">
         <div className="cse">
-          <div className="clg">Computer Science and Engineering</div>
+          <div className="clg ">Computer Science and Engineering</div>
           <div className="clg-desc">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
             voluptatem incidunt laborum velit, sit at non unde numquam
