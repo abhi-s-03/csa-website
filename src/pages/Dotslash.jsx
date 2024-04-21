@@ -52,8 +52,7 @@ function Gallery() {
 
           
 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
-        </p>
+        Relive the excitement of Dotslash, the annual extravaganza from the Computer Science & Engineering Department at the College of Engineering, Trivandrum! Explore the workshops, competitions, and project exhibitions that showcased student innovation and technology. Dotslash has left a legacy of fostering continuous learning and skill development in the computer science community.        </p>
         <div className="flex flex-col-reverse xl:flex-row items-center justify-center xl:justify-start">
           
           <div className="md:w-3/4">
@@ -61,8 +60,7 @@ function Gallery() {
             <p className="text-white p-10 xl:p-20 text-lg flex justify-center items-center text-center md:justify-start">
              
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
-
+            Dotslash, the annual tech fest by the Computer Science and Engineering Department at College of Engineering, Trivandrum, kicked off with Professor Balu John unveiling the event logo. Gokul G Menon highlighted its significance, promising workshops and competitions to nurture innovation. Dotslash provided a platform for students to exhibit talents and engage in collaborative learning in computer science and engineering.
             </p>
           </div>
           <div className="md:m-10 p-16 md:p-0 mx-16 md:w-1/2 px-5">
@@ -81,7 +79,7 @@ function Gallery() {
               
 
 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
+            Dot Slash, the techno-cultural fest of College of Engineering Trivandrum's Department of Computer Science and Engineering, returned after 4 years with Dot Slash 23 on December 8th-9th, 2023. Inaugurated by Dr. Savier J S, the event featured talk sessions by startup leaders, workshops, games, and 'Dot Slash for Juniors' aimed at introducing coding to school students. The fest concluded with "Dot Night" and Day 2 included workshops, competitions, and Frost Code hackathon, reviving the department's spirit and igniting student interest in technology.
             </p>
           </div>
         </div>
