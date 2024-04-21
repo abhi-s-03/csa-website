@@ -1,21 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Navbar from "../components/Navbar";
-import image1 from '../assets/images/apples.jpg';
 import { MdArrowRight, MdArrowLeft } from "react-icons/md";
 import dotslashTitle from '../assets/images/dotslashTitle.svg';
-import img1 from "../assets/images/dotslash/1.png";
-import img2 from "../assets/images/dotslash/2.png";
-import img3 from "../assets/images/dotslash/3.png";
-import img4 from "../assets/images/dotslash/4.png";
-import img5 from "../assets/images/dotslash/5.png";
-import img6 from "../assets/images/dotslash/6.png";
-import img7 from "../assets/images/dotslash/7.png";
-import img8 from "../assets/images/dotslash/8.png";
-import img9 from "../assets/images/dotslash/9.png";
+import img1 from "../assets/images/dotslash/1.jpg";
+import img2 from "../assets/images/dotslash/2.jpg";
+import img3 from "../assets/images/dotslash/3.jpg";
+import img4 from "../assets/images/dotslash/4.jpg";
+import img5 from "../assets/images/dotslash/5.jpg";
+import img6 from "../assets/images/dotslash/6.jpg";
+import img7 from "../assets/images/dotslash/7.jpg";
+import img8 from "../assets/images/dotslash/8.jpg";
+import img9 from "../assets/images/dotslash/9.jpg";
 import './styles/dotslash.css';
 import Footer from '../components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useScroll } from 'framer-motion';
 
 function Gallery() {
+  const ref = useRef(null);
+  useScroll({
+    target: '',
+    offset: ["0 1", "1.33 1"]
+  });
   const [selectedImage, setSelectedImage] = useState(0);
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
   const intervalDuration = 3000; // Change this value to adjust the interval duration
@@ -25,7 +32,13 @@ function Gallery() {
       setSelectedImage((prevIndex) => (prevIndex + 1) % images.length);
     }, intervalDuration);
 
+    // Clean up interval on component unmount
     return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    // Initialize AOS once the component is mounted
+    AOS.init();
   }, []);
 
   const handleClick = (index) => {
@@ -43,45 +56,33 @@ function Gallery() {
   return (
     <div className='dotslash-full max-w-full overflow-hidden'>
       <Navbar textColor="white" />
-      <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen' style={{ background: '' }}>
+      <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen' data-aos="zoom-out" style={{ background: '' }}>
+        {/* Rest of your JSX code */}
+        
         <div className='flex flex-row justify-center text-[#ffffff] font-bold'>
           <img src={dotslashTitle} alt="DotSlash Title" className="mx-auto mt-6 w- h-16" />
         </div>
         
         <p className="text-white p-20 text-lg w-full flex justify-center items-center text-center">
-
-          
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
+          Relive the excitement of Dotslash, the annual extravaganza from the Computer Science & Engineering Department at the College of Engineering, Trivandrum! Explore the workshops, competitions, and project exhibitions that showcased student innovation and technology. Dotslash has left a legacy of fostering continuous learning and skill development in the computer science community.
         </p>
         <div className="flex flex-col-reverse xl:flex-row items-center justify-center xl:justify-start">
-          
           <div className="md:w-3/4">
-            {/* Paragraph */}
             <p className="text-white p-10 xl:p-20 text-lg flex justify-center items-center text-center md:justify-start">
-             
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
-
+              Dotslash, the annual tech fest by the Computer Science and Engineering Department at College of Engineering, Trivandrum, kicked off with Professor Balu John unveiling the event logo. Gokul G Menon highlighted its significance, promising workshops and competitions to nurture innovation. Dotslash provided a platform for students to exhibit talents and engage in collaborative learning in computer science and engineering.
             </p>
           </div>
           <div className="md:m-10 p-16 md:p-0 mx-16 md:w-1/2 px-5">
-            {/* Image */}
             <img src={img1} alt="Image" className="w-full md:w-auto" />
           </div>
         </div>
         <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-start">
           <div className="md:m-4 p-16 md:p-0 mx-16 md:w-1/2 px-5">
-            {/* Image */}
             <img src={img9} alt="Image" className="w-full md:w-auto" />
           </div>
           <div className="md:w-3/4">
-            {/* Paragraph */}
             <p className="text-white p-10 xl:p-20 text-lg flex justify-center items-center text-center md:justify-end">
-              
-
-
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda corrupti nesciunt earum ratione iste necessitatibus aspernatur repellat distinctio, quis non quod, harum modi sit reiciendis fugiat illo animi ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur unde debitis, illo quas error non aperiam ex cum deleniti aliquam cupiditate nobis provident ipsam delectus illum possimus laborum sit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quos quasi tempore, iste perspiciatis placeat porro deleniti, doloribus minus rem suscipit vel libero voluptatem. Quia velit dolor voluptas iure ad!
+              Dot Slash, the techno-cultural fest of College of Engineering Trivandrum's Department of Computer Science and Engineering, returned after 4 years with Dot Slash 23 on December 8th-9th, 2023. Inaugurated by Dr. Savier J S, the event featured talk sessions by startup leaders, workshops, games, and 'Dot Slash for Juniors' aimed at introducing coding to school students. The fest concluded with "Dot Night" and Day 2 included workshops, competitions, and Frost Code hackathon, reviving the department's spirit and igniting student interest in technology.
             </p>
           </div>
         </div>
