@@ -13,8 +13,7 @@ import img8 from "../assets/images/dotslash/8.jpg";
 import img9 from "../assets/images/dotslash/9.jpg";
 import './styles/dotslash.css';
 import Footer from '../components/Footer';
-// import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 import { useScroll } from 'framer-motion';
 
 function Gallery() {
@@ -56,7 +55,7 @@ function Gallery() {
   return (
     <div className='dotslash-full max-w-full overflow-hidden'>
       <Navbar textColor="white" />
-      <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen' data-aos="zoom-out" style={{ background: '' }}>
+      <div className='bg-gradient-to-b pt-40 pb-16 min-h-screen' style={{ background: '' }}>
         {/* Rest of your JSX code */}
         
         <div className='flex flex-row justify-center text-[#ffffff] font-bold'>
