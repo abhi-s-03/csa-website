@@ -13,8 +13,8 @@ import img8 from "../assets/images/dotslash/8.jpg";
 import img9 from "../assets/images/dotslash/9.jpg";
 import './styles/dotslash.css';
 import Footer from '../components/Footer';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import { useScroll } from 'framer-motion';
 
 function Gallery() {
@@ -36,10 +36,10 @@ function Gallery() {
     return () => clearInterval(intervalId);
   }, []);
 
-  useEffect(() => {
-    // Initialize AOS once the component is mounted
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   // Initialize AOS once the component is mounted
+  //   AOS.init();
+  // }, []);
 
   const handleClick = (index) => {
     setSelectedImage(index);
