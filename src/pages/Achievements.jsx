@@ -6,38 +6,36 @@ import 'swiper/css/pagination';
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import Event1 from '../assets/images/achievements.jpg';
 import Event2 from '../assets/images/achievements.jpg';
+import s1 from '../assets/images/achievements/s1.jpeg';
+import s1b2 from '../assets/images/achievements/s1b2.jpeg';
+import s7 from '../assets/images/achievements/s7.jpeg';
 import Navbar from '../components/Navbar';
 import background from '../assets/images/bg1.png';
 
 const studentEvents = [
   {
     id: 1,
-    image: Event1,
-    Name: 'John Doe',
-    Year: '2022-2023',
-    description: 'Student',
+    image: s1,
+    Name: 'S1B1',
+    Year: '',
+    description: '',
   },
   {
     id: 2,
-    image: Event2,
-    Name: 'Jane Doe',
-    Year: '2022-2023',
-    description: 'Student',
+    image: s1b2,
+    Name: 'S1B2',
+    Year: '',
+    description: '',
   },
   {
     id: 3,
-    image: Event1,
-    Name: 'John Doe',
-    Year: '2022-2023',
-    description: 'Student',
+    image: s7,
+    Name: 'S7',
+    Year: '',
+    description: '',
   },
-  {
-    id: 4,
-    image: Event2,
-    Name: 'Jane Doe',
-    Year: '2022-2023',
-    description: 'Student',
-  }
+  
+  
 ];
 
 const facultyEvents = [
@@ -78,12 +76,12 @@ function Events() {
   React.useEffect(() => {
     if (swiperRef.current) {
       new Swiper(swiperRef.current, {
-        initialSlide: 0,
+        initialSlide: 1,
         effect: 'coverflow',
         loop: true,
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 1, // Display three items at a time
+        slidesPerView: 3, // Display three items at a time
         spaceBetween: 30,
         coverflowEffect: {
           rotate: 50,
@@ -107,7 +105,7 @@ function Events() {
         breakpoints: {
           // when window width is >= 768px
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
           // when window width is >= 992px
           992: {
@@ -134,7 +132,7 @@ function Events() {
         <div className="text-4xl sm:text-5xl lg:text-6xl text-center mb-4 font-bold">Achievements</div>
         <div className='items-center m-0 flex flex-row justify-center'>
           <button className={`text-xl sm:text-2xl font-semibold ${showStudentEvents ? 'text-black ' : 'text-gray-500'}`} onClick={handleStudentClick}>Student</button>
-          <button className={`text-xl sm:text-2xl font-semibold ${!showStudentEvents ? 'text-black ' : 'text-gray-500'}`} onClick={handleFacultyClick}>Faculty</button>
+          {/*<button className={`text-xl sm:text-2xl font-semibold ${!showStudentEvents ? 'text-black ' : 'text-gray-500'}`} onClick={handleFacultyClick}>Faculty</button>*/}
         </div>
         <div className='mx-4 mt-7 relative flex flex-row justify-center swiper-container space-x-4 sm:mx-24'>
           <button className="bg-transparent rounded-full text-[#525252] max-w-6 self-center" onClick={() => swiperRef.current.swiper.slidePrev()}>
