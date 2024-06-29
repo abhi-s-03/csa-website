@@ -13,6 +13,7 @@ import s7 from '../assets/images/achievements/s7crop.jpeg';
 import s8 from '../assets/images/achievements/s8toppers.jpg';
 import Navbar from '../components/Navbar';
 import './styles/achievements.css';
+import Footer from '../components/Footer';
 
 const studentEvents = [
   {
@@ -80,6 +81,18 @@ function Events() {
   const swiperRef = useRef(null);
   const [showStudentEvents, setShowStudentEvents] = useState(true);
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 992);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 992);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (swiperRef.current) {
@@ -141,13 +154,20 @@ function Events() {
     setSelectedEvent(null);
   };
 
+  const handleOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+  };
+
   return (
     <div className='achievements min-h-screen bg-pattern bg-repeat '>
       <Navbar textColor="black" />
       <div className='p-10 pt-44 items-center flex flex-col'>
         <div className="text-4xl sm:text-5xl lg:text-6xl text-center mb-4 font-bold">Achievements</div>
         <div className='items-center m-0 flex flex-row justify-center'>
-          <button className={`text-xl sm:text-2xl font-semibold ${showStudentEvents ? 'text-black ' : 'text-gray-500'}`} onClick={handleStudentClick}>Student</button>
+          <button className={`text-xl sm:text-2xl font-semibold w-fit ${showStudentEvents ? 'text-black ' : 'text-gray-500'}`} onClick={handleStudentClick}>Student</button>
+          
         </div>
         <div className='mx-4 mt-7 relative flex flex-row justify-center swiper-container space-x-4 sm:mx-24'>
           <button className="bg-transparent rounded-full text-[#525252] max-w-6 self-center" onClick={() => swiperRef.current.swiper.slidePrev()}>
@@ -178,9 +198,9 @@ function Events() {
           </button>
         </div>
       </div>
-      {selectedEvent && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
-          <div className="relative bg-white p-4 rounded-lg w-fit items-center flex flex-col justify-center  mx-auto">
+      {selectedEvent && isLargeScreen && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50" onClick={handleOverlayClick}>
+          <div className="relative bg-white p-4 rounded-lg w-6/12 items-center flex flex-col justify-center  mx-auto">
             <button
               className="absolute right-[10px] top-[10px] w-fit text-gray-500 hover:text-gray-700 "
               onClick={closeModal}
@@ -196,6 +216,7 @@ function Events() {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 }

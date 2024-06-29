@@ -120,7 +120,7 @@ function Gallery() {
           </button>
         </div>
         <div className='mt-10 text-center'>
-          <p className='text-white text-xl'>Visit <a href='https://www.dotslashcet.tech/' className='underline italic'>Dotslash</a> for more</p>
+          <p className='text-white text-xl'>Visit <a href='https://www.dotslashcet.tech/' className='underline italic font-semibold'>Dotslash</a> for more</p>
         </div>
       </div>
       <Footer />

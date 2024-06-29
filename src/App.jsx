@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setInitialLoading(false);
-    }, 1500); // 1.5 seconds minimum preloader
+    }, 3000); // 1.5 seconds minimum preloader
 
     return () => clearTimeout(timer);
   }, []);
